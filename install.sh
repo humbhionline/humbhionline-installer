@@ -26,6 +26,7 @@ do
 done
 
 cd $application_dir/humbhionline
-rsync -av overrideProperties.sample/ overrideProperties/
+git checkout scale
+rsync --ignore-existing -av overrideProperties.sample/ overrideProperties/
 chmod +x bin/*
 
